@@ -1,0 +1,156 @@
+.quiz-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.quiz-progress {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.quiz-progress progress {
+  width: 90%;
+  height: 10px;
+  appearance: none;
+  border-radius: 10px;
+}
+
+.quiz-progress progress::-webkit-progress-bar {
+  background-color: #e0e0e0;
+  border-radius: 10px;
+}
+
+.quiz-progress progress::-webkit-progress-value {
+  background-color: #00b894;
+  border-radius: 10px;
+}
+
+.result-box {
+  max-width: 800px;
+  margin: 2rem auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+
+.result-box button {
+  display: block;
+  margin: 2rem auto 0 auto;
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  background-color: #00b894;
+  border: none;
+  color: white;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.result-box button:hover {
+  background-color: #019875;
+  transform: scale(1.05);
+}
+
+.options-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.quiz-option {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: none;
+  background-color: #00b894;
+  color: white;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.animated-option {
+  opacity: 0;
+  animation: fadeSlideUp 0.4s ease forwards;
+}
+
+.quiz-option:hover {
+  background-color: #019875;
+  transform: scale(1.03);
+}
+
+.quiz-container.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.4s ease;
+}
+
+.quiz-container.fade-out {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+}
+
+.result-box.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.4s ease;
+}
+
+.result-box.fade-out {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+}
+
+.fade-in button {
+  opacity: 0;
+  animation: buttonFade 0.3s ease-in forwards;
+}
+
+.fade-in button:nth-child(1) { animation-delay: 0.2s; }
+.fade-in button:nth-child(2) { animation-delay: 0.4s; }
+.fade-in button:nth-child(3) { animation-delay: 0.6s; }
+.fade-in button:nth-child(4) { animation-delay: 0.8s; }
+
+@keyframes buttonFade {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 576px) {
+  .options-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

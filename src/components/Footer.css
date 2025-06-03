@@ -1,0 +1,32 @@
+.footer {
+  background-color: #1c1c1c;
+  color: #f0f0f0;
+  padding: 2rem 1rem;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.footer h5 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-description {
+  font-size: 1rem;
+  opacity: 0.8;
+  max-width: 600px;
+  margin: 0 auto 1.5rem;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 1rem;
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
