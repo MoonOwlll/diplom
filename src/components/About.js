@@ -6,8 +6,8 @@ function About() {
     <div className="container mt-5 biography-container">
       <h2 className="mb-4 text-center">🌟 Матвей Петрович Егоров</h2>
         <div className="text-center mb-4">
-            <img
-            src="/images/Matvey.png"
+            <img 
+            src={`${process.env.PUBLIC_URL}/images/Matvey.png`}
             alt="Матвей Петрович Егоров"
             className="img-fluid rounded shadow-sm biography-photo"
             style={{ maxWidth: '300px' }}
