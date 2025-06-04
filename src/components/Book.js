@@ -6,7 +6,7 @@ function Book() {
     <div className="container mt-5 biography-container">
       <h2 className="mb-4 text-center">📘 «Ийэ тыл кэрэһитэ»</h2>
       <div className='text-center mb-4'>
-        <img src="/images/book.jpg" alt="Обложка книги" className="img-fluid rounded my-4 biography-photo" style={{ maxWidth: '400px' }}/>
+        <img src={`${process.env.PUBLIC_URL}/images/book.jpg`} alt="Обложка книги" className="img-fluid rounded my-4 biography-photo" style={{ maxWidth: '400px' }}/>
       </div>
       <p>
         <strong>«Ийэ тыл кэрэһитэ»</strong> — 
