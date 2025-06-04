@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/diplom/static/css/main.00c5b4da.css",
-    "main.js": "/diplom/static/js/main.1f7bbce4.js",
+    "main.js": "/diplom/static/js/main.29d007aa.js",
     "static/js/453.8ab44547.chunk.js": "/diplom/static/js/453.8ab44547.chunk.js",
     "static/media/1.png": "/diplom/static/media/1.66a103156a8b3cb52119.png",
     "index.html": "/diplom/index.html",
     "main.00c5b4da.css.map": "/diplom/static/css/main.00c5b4da.css.map",
-    "main.1f7bbce4.js.map": "/diplom/static/js/main.1f7bbce4.js.map",
+    "main.29d007aa.js.map": "/diplom/static/js/main.29d007aa.js.map",
     "453.8ab44547.chunk.js.map": "/diplom/static/js/453.8ab44547.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.00c5b4da.css",
-    "static/js/main.1f7bbce4.js"
+    "static/js/main.29d007aa.js"
   ]
 }
