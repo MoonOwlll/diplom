@@ -17,7 +17,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/diplom">
       <div className="app-wrapper">
         <Header />
         <main className="main-content">
